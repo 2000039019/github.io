@@ -1,32 +1,48 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        CheckAnagrams
-    </head>
-    <body>
-        <pre>
-            #include<bits/stdc++.h>
-            using namespace std;
-            bool check(string s,string s1){
-                if(s.size()!=s1.size())return false;
-                for(int i=0;i<s.size();i++){
-                    if(s[i]!=s1[i])return false;
-                }
-                return true;
-            }
-            
-            int main(){
-               // write your code here
-               int n;
-               cin>>n;
-               while(n--){
-               string s,s1;
-               cin>>s>>s1;
-               sort(s.begin(),s.end());
-               sort(s1.begin(),s1.end());
-               if(check(s,s1))cout<<"True"<<"\n";
-               else cout<<"False"<<"\n";
-               }
-                return 0;
-            }</pre>
-    </body>
+<head>
+  <title>C++ Code Display</title>
+  <style>
+    body {
+      font-family: monospace;
+      padding: 20px;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>C++ Code Display</h1>
+  <pre>
+    
+      #include&lt;bits/stdc++.h&gt;
+      using namespace std;
+      bool check(string s,string s1){
+          if(s.size()!=s1.size())return false;
+          for(int i=0;i&lt;s.size();i++){
+              if(s[i]!=s1[i])return false;
+          }
+          return true;
+      }
+      
+      int main(){
+         // write your code here
+         int n;
+         cin&gt;&gt;n;
+         while(n--){
+             string s,s1;
+             cin&gt;&gt;s&gt;&gt;s1;
+             sort(s.begin(),s.end());
+             sort(s1.begin(),s1.end());
+             if(check(s,s1))cout&lt;&lt;"True"&lt;&lt;"\n";
+             else cout&lt;&lt;"False"&lt;&lt;"\n";
+         }
+          return 0;
+      }
+    
+  </pre>
+</body>
 </html>
