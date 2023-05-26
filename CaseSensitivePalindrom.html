@@ -1,39 +1,52 @@
+<!DOCTYPE html>
 <html>
-    <head>
-     CaseSensitivePalindrom
-    </head>
-    <body>
-        <pre> 
-            #include<bits/stdc++.h>
-            using namespace std;
-            
-            int main(){
-               // write your code here
-               int t;
-               cin>>t;
-               while(t--){
-                   string s;
-                   cin>>s;
-                   transform(s.begin(), s.end(), s.begin(), ::tolower);
-                   
-                   bool flag=false;
-                   int n=s.size();
-                   for(int i=0;i<n/2;i++){
-                       if(s[i]!=s[n-1-i]){
-                           flag=true;
-                       }
-                   }
-                   if(flag){
-                       cout<<"No"<<"\n";
-                   }
-                   else{
-                       cout<<"Yes"<<"\n";
-                   }
-                   
-               }
-                return 0;
-            }
-            
-        </pre>
-    </body>
+<head>
+  <title>C++ Code Display</title>
+  <style>
+    body {
+      font-family: monospace;
+      padding: 20px;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>C++ Code Display</h1>
+  <pre>
+    // Place your C++ code here
+    #include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+   // write your code here
+   int t;
+   cin>>t;
+   while(t--){
+       string s;
+       cin>>s;
+       transform(s.begin(), s.end(), s.begin(), ::tolower);
+       
+       bool flag=false;
+       int n=s.size();
+       for(int i=0;i<n/2;i++){
+           if(s[i]!=s[n-1-i]){
+               flag=true;
+           }
+       }
+       if(flag){
+           cout<<"No"<<"\n";
+       }
+       else{
+           cout<<"Yes"<<"\n";
+       }
+       
+   }
+    return 0;
+  }
+  </pre>
+</body>
 </html>
