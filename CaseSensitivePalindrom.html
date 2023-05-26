@@ -24,25 +24,24 @@
       int main(){
          // write your code here
          int t;
-         cin>>t;
+         cin&gt;&gt;t;
          while(t--){
              string s;
-             cin>>s;
+             cin&gt;&gt;s;
              transform(s.begin(), s.end(), s.begin(), ::tolower);
 
              bool flag=false;
              int n=s.size();
-             
-             for(int i=0;i<n/2;i++){
+             for(int i=0;i&lt;n/2;i++){
                  if(s[i]!=s[n-1-i]){
                      flag=true;
                  }
              }
              if(flag){
-                 cout<<"No"<<"\n";
+                 cout&lt;&lt;"No"&lt;&lt;"\n";
              }
              else{
-                 cout<<"Yes"<<"\n";
+                 cout&lt;&lt;"Yes"&lt;&lt;"\n";
              }
 
          }
